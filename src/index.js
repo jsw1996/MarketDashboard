@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import PriceGraph from './PriceGraph';
 import LineChart from './modules/Chart/LineChart';
 import Navbar from './modules/Navbar/Navbar';
 import Market from './modules/Market/Market'

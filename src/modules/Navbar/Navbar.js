@@ -19,7 +19,7 @@ const Navbar = () => {
 
             <ul id="navbar" >
                 {/* <FundFilled style={{ fontSize: '50px', color: '#08c', float: "left" }} /> */}
-                <img src="https://www.flaticon.com/svg/vstatic/svg/1293/1293045.svg?token=exp=1616832269~hmac=a8999bbb77f785eb6dedbfacf10b7e85" style={{ height: 40, marginTop: 5 }}></img>
+                <img src="https://www.flaticon.com/svg/vstatic/svg/3799/3799817.svg?token=exp=1617402999~hmac=6f850957dcf5772d5d2da53f5f438042" style={{ height: 40, marginTop: 5 }}></img>
                 <li id="link1"><NavLink exact activeClassName="selected" to={"/"}>Search Symbol</NavLink></li>
                 <li id="link2"><NavLink exact activeClassName="selected" to={"/market"}>Market</NavLink></li>
             </ul></>

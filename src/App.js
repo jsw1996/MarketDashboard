@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import LineChart from './modules/Chart/LineChart';
 import React, { useEffect } from 'react';
