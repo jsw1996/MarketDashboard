@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import LineChart from './modules/Chart/LineChart';
-import Navbar from './modules/Navbar/Navbar';
+import MyNavbar from './modules/Navbar/Navbar';
 import Market from './modules/Market/Market'
 import {
   withRouter,
@@ -17,7 +17,7 @@ import {
 ReactDOM.render(
   <>
     <Router>
-      <Navbar />
+      <MyNavbar />
 
       <Switch>
 

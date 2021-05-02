@@ -165,22 +165,14 @@ h4 a:hover{
 }
 
 #navbar{
-  background:rgb(27, 27, 39);
-  /* display:flex;
-  flex-direction:row;
- 
-  justify-content:center; */
-
-  list-style: none;
-  overflow: hidden;
-  padding: 0 10px;
+ margin-bottom: 30px;
 
 }
 
 
 
 #navbar li{
-  color: white;
+  /* color: white; */
   font-weight: 300;
   line-height: 50px;
   margin: 0px 20px;
@@ -189,28 +181,26 @@ h4 a:hover{
   height: 50px;
   box-sizing: border-box;
 }
-#navbar li a{
-  font-size: 0.9em;
-  color:lightgray;
+
+
+#responsive-navbar-nav > div > a{
+  line-height: 32px;
   text-decoration: none;
-  margin:0 auto
+  margin:0 auto;
+  font-weight: 800;
+  text-align: center;
+}
+#responsive-navbar-nav > div > a:hover{
+  text-decoration: none;
+  color: #ff4d4f;
 }
 
 
-#navbar li#link2:hover, #navbar li#link1:hover{
-  border-bottom: white 2px solid;
-  font-weight: 600;
+
+/* #navbar li .selected{
   color: white;
-}
-
-/* #navbar li a:hover{
-  color: aliceblue;
+  font-weight: 600;
 } */
-
-#navbar li .selected{
-  color: white;
-  font-weight: 600;
-}
 
 
 #title{

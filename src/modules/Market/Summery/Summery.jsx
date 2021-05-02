@@ -669,22 +669,27 @@ const Summery = () => {
     let [data, setData] = useState(resp.marketSummaryResponse.result.slice(0, 3));
 
 
-    // function getData() {
-    //     return loadSummery().then((rawData) => { setData(rawData.marketSummaryResponse.result.slice(0, 3)) });
-    // }
+    function getData() {
+        return loadSummery().then((rawData) => { setData(rawData.marketSummaryResponse.result.slice(0, 3)) });
+    }
 
     function getPriceChange(item) {
+        return item.regularMarketChange.raw
+
         // return ((item.spark.close.slice(-1)[0] - item.regularMarketPreviousClose.raw)).toFixed(2)
     }
 
     function getPercentChange(item) {
         // return ((item.spark.close.slice(-1)[0] - item.regularMarketPreviousClose.raw) / item.regularMarketPreviousClose.raw * 100).toFixed(2) + '%'
         return item.regularMarketChangePercent.fmt
+
+        // return item.regularMarketChangePercent.fmt
     }
 
     function getPrice(item) {
-        //return (item.spark.close.slice(-1)[0]).toFixed(2);
+        // return (item.spark.close.slice(-1)[0]).toFixed(2);
         return item.regularMarketPrice.raw
+        // return item.regularMarketPrice.raw
     }
 
     function getColor(item) {
@@ -695,34 +700,15 @@ const Summery = () => {
         }
     }
 
-    // useEffect(getData, [a])
+    useEffect(getData, [a])
 
     return (<div id="indexRow">
         <Row gutter={16}>
-            {/* <Col span={12}>
-                <Card>
-                    <Statistic
-                        title="Active"
-                        value={11.28}
-                        precision={2}
-                        valueStyle={{ color: '#3f8600' }}
-                        prefix={<ArrowUpOutlined />}
-                        suffix="%"
-                    />
-                </Card>
-            </Col>
-            <Col span={12}>
-                <Card>
-                    <h4>S&P 500</h4>
-                    <ArrowDownOutlined id="arrow" style={{ display: "inlineBlock", fontSize: "30px", color: 'red ' }} />
-                    13%
-                </Card>
-            </Col> */}
             {data.map((item, index) => {
-                return (<Col span={8}>
+                return (<Col key={index} span={8}>
                     <div className="indexCard">
                         <div>
-                            <span class="indexName">{item.shortName + " "}</span>
+                            <span className="indexName">{item.shortName + " "}</span>
                             <span className="right" >{getPrice(item)}</span></div>
                         <div>
                             {/* <ArrowDownOutlined id="arrow" style={{ display: "inlineBlock", fontSize: "20px", color: 'rgb(241,47,73) ' }} /> */}

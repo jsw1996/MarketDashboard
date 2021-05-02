@@ -329,9 +329,9 @@ const TopList = () => {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
             >
-                {stockList.map((item) => {
+                {stockList.map((item, index) => {
                     return (
-                        <div style={{ color: "white", background: getColor(item), margin: "10px", borderRadius: "6px", textAlign: "center", padding: "10px" }}>
+                        <div key={index} style={{ color: "white", background: getColor(item), margin: "10px", borderRadius: "6px", textAlign: "center", padding: "10px" }}>
                             <p style={{ color: "white", fontWeight: 700, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{item.name}</p>
                             {/* {item.dailyPercentGain} */}
                             {getPercent(item)}
