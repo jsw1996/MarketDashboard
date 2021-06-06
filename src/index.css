@@ -301,7 +301,17 @@ table.movers tr{
   border-bottom: rgba(41, 40, 40, 0.062) 2px solid;
 }
 
+#spinner{
+  display: block;
+  width: 60px;
+  margin: auto;
+  margin-top: 200px;
+}
 
+.center{
+  width: 108px;
+  margin: auto;
+}
 
 
 @media only screen and (min-width: 768px) {
