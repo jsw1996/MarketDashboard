@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Summery
+通过开发一个 React 网站，使得用户可以查询美股个股的股价历史走势和相关新闻，同时还为用户提供实时大盘指数信息。\
+此应用利用 IEX API 和 Yahoo Finance API 来获取实时股票数据和相关新闻。 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo
+你可以通过以下网址访问此应用：https://jsw1996.github.io/MarketDashboard/#/
+
+## Screenshot
+![recording3](https://user-images.githubusercontent.com/45106387/128222887-37560095-1a65-46ba-9ebb-e9cf569bec56.gif)
+
 
 ## Available Scripts
 
